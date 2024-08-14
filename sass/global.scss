@@ -19,3 +19,21 @@ body {
     margin-left: auto;
     margin-right: auto;
 }
+
+.title-section {
+    text-align: center;
+    margin-bottom: 50px;
+   & h2 {
+    font-size: 60px;
+    background: var(--sr-title-color);
+    color: transparent;
+    -webkit-background-clip: text;
+    text-transform: uppercase;
+    }
+
+    & p {
+        font-size: 20px;
+        color: var(--sr-text-color);
+        margin-top: -10px;
+    }
+}

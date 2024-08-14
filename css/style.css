@@ -251,14 +251,78 @@
   height: 100vh;
 }
 
+.skills {
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+.skills__tap {
+  display: flex;
+  width: 300px;
+  justify-content: space-between;
+  background-color: var(--sr-cards-color);
+  padding: 8px;
+  border-radius: 20px;
+  margin: 0 auto 80px;
+}
+.skills__tap-item {
+  font-size: 18px;
+  padding: 6px;
+  text-transform: capitalize;
+  min-width: 20%;
+  text-align: center;
+}
+.skills__tap-item:hover, .skills__tap-item--active {
+  background-color: var(--secondary-color);
+  color: var(--primary-color);
+  border-radius: 16px;
+}
+.skills__box {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 20px;
+}
+.skills__card {
+  background-color: var(--sr-cards-color);
+  text-align: center;
+  padding: 20px;
+  border-radius: 16px;
+  border: 1px solid transparent;
+  transition: 0.5s;
+}
+.skills__card:hover .skills__card-icon {
+  filter: grayscale(0);
+  transform: scale(1.1, 1.1);
+}
+.skills__card:hover {
+  background-color: var(--secondary-color);
+  border-color: var(--sr-dr-color);
+}
+.skills__card:hover .skills__card-name-sk {
+  color: var(--sr-dr-color);
+}
+.skills__card-icon {
+  width: 70px;
+  filter: grayscale(90%);
+  margin-bottom: 20px;
+  transition: 0.5s;
+}
+.skills__card-name-sk {
+  color: var(--sr-txt-color);
+  text-transform: uppercase;
+  transition: 0.5s;
+}
+
 :root {
   --primary-color: #FFFCFC;
-  --secondary-color: #4E0DD3;
-  --sr-dr-color: #180343;
+  --secondary-color: #24075c;
+  --sr-dr-color: #4E0DD3;
   --logo-background: linear-gradient(to right, #4E0DD3, #270962);
   --sr-foz: 26px;
   --sr-title-color: linear-gradient(to right, #4E0DD3, #563D88, #270962, #270962);
   --sr-text-color: #180343;
+  --sr-title-color: linear-gradient(to right, #4E0DD3, #563D88, #270962, #270962);
+  --sr-cards-color: #f0f0f0;
+  --sr-txt-color: rgb(77, 76, 76);
 }
 
 * {
@@ -282,6 +346,23 @@ body {
   padding-right: 20px;
   margin-left: auto;
   margin-right: auto;
+}
+
+.title-section {
+  text-align: center;
+  margin-bottom: 50px;
+}
+.title-section h2 {
+  font-size: 60px;
+  background: var(--sr-title-color);
+  color: transparent;
+  -webkit-background-clip: text;
+  text-transform: uppercase;
+}
+.title-section p {
+  font-size: 20px;
+  color: var(--sr-text-color);
+  margin-top: -10px;
 }
 
 /*# sourceMappingURL=style.css.map */

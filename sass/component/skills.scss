@@ -1,0 +1,69 @@
+.skills {
+  padding-top: 40px;
+  padding-bottom: 40px;
+
+  &__tap {
+    display: flex;
+    width: 300px;
+    justify-content: space-between;
+    background-color: var(--sr-cards-color);
+    padding: 8px;
+    border-radius: 20px;
+    margin: 0 auto 80px;
+
+    &-item {
+      font-size: 18px;
+      padding: 6px;
+      text-transform: capitalize;
+      min-width: 20%;
+      text-align: center;
+
+      &:hover,
+      &--active {
+        background-color: var(--secondary-color);
+        color: var(--primary-color);
+        border-radius: 16px;
+      }
+    }
+
+  }
+
+  &__box {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
+  }
+  &__card {
+    background-color: var(--sr-cards-color);
+    text-align: center;
+    padding: 20px;
+    border-radius: 16px;
+    border: 1px solid transparent;
+    transition: 0.5s;
+
+    &:hover &-icon {
+      filter: grayscale(0);
+      transform: scale(1.1, 1.1);
+    }
+    &:hover {
+      background-color: var(--secondary-color);
+      border-color: var(--sr-dr-color);
+    }
+    &:hover &-name-sk {
+      color: var(--sr-dr-color);
+    }
+
+    &-icon {
+      width: 70px;
+      filter: grayscale(90%);
+      margin-bottom: 20px;
+      transition: 0.5s;
+    }
+
+    &-name-sk {
+      color: var(--sr-txt-color);
+      text-transform: uppercase;
+      transition: 0.5s;
+    }
+  }
+}
