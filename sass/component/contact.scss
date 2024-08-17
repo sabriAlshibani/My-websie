@@ -1,0 +1,82 @@
+.contact {
+    padding-top: 60px;
+    padding-bottom: 60px;
+
+    &__content {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+          @media (max-width: 767px) {
+            flex-direction: column;
+          }
+
+    }
+
+    &__img {
+        width: 48%;
+        @media (max-width: 990px) {
+            width: 40%;
+          }
+          @media (max-width: 767px) {
+              width: 100%;
+              text-align: center;
+          }
+
+        & .svg {
+            width: 100%;
+        }
+    }
+
+    &__application {
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+
+        @media (max-width: 990px) {
+            width: 48%;
+          }
+          @media (max-width: 767px) {
+              width: 100%;
+          }
+    }
+
+    &__card {
+        display: flex;
+        align-items: center;
+        background-color: var(--sr-cards-color);
+        padding: 30px 20px;
+        gap: 30px;
+        border-radius: 20px;
+        transition: .5s;
+        border: 1px solid transparent;
+
+
+        &:hover {
+            transform: translateY(-6px);
+            border-color: var(--secondary-color);
+        }
+
+        &-icon {
+            background-color: var(--secondary-color);
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            position: relative;
+
+            & i {
+                color: var(--primary-color);
+                position: absolute;
+                font-size: 20px;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+            }
+        }
+
+        & a {
+            color: var(--sr-txt-color);
+            font-size: 20px;
+        }
+    }
+}

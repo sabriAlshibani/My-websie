@@ -258,20 +258,22 @@
   display: flex;
   width: 300px;
   justify-content: space-between;
+  background-color: var(--sr-cards-color);
   padding: 8px;
   border-radius: 20px;
   margin: 0 auto 80px;
 }
 .skills__tap-item {
-  font-size: 18px;
+  font-size: 16px;
   padding: 6px;
   text-transform: capitalize;
   min-width: 20%;
   text-align: center;
+  color: var(--sr-txt-color);
+  font-weight: 600;
 }
 .skills__tap-item:hover, .skills__tap-item--active {
-  background-color: var(--secondary-color);
-  color: var(--primary-color);
+  color: var(--sr-dr-color);
   border-radius: 16px;
 }
 .skills__box {
@@ -289,14 +291,9 @@
 }
 .skills__card:hover .skills__card-icon {
   filter: grayscale(0);
-  transform: scale(1.1, 1.1);
 }
 .skills__card:hover {
-  background-color: var(--secondary-color);
   border-color: var(--sr-dr-color);
-}
-.skills__card:hover .skills__card-name-sk {
-  color: var(--sr-dr-color);
 }
 .skills__card-icon {
   width: 70px;
@@ -335,7 +332,7 @@
   }
 }
 .about__img {
-  width: 45%;
+  width: 40%;
 }
 @media (max-width: 990px) {
   .about__img {
@@ -397,6 +394,87 @@
   color: var(--primary-color);
 }
 
+.contact {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+.contact__content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+@media (max-width: 767px) {
+  .contact__content {
+    flex-direction: column;
+  }
+}
+.contact__img {
+  width: 48%;
+}
+@media (max-width: 990px) {
+  .contact__img {
+    width: 40%;
+  }
+}
+@media (max-width: 767px) {
+  .contact__img {
+    width: 100%;
+    text-align: center;
+  }
+}
+.contact__img .svg {
+  width: 100%;
+}
+.contact__application {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+@media (max-width: 990px) {
+  .contact__application {
+    width: 48%;
+  }
+}
+@media (max-width: 767px) {
+  .contact__application {
+    width: 100%;
+  }
+}
+.contact__card {
+  display: flex;
+  align-items: center;
+  background-color: var(--sr-cards-color);
+  padding: 30px 20px;
+  gap: 30px;
+  border-radius: 20px;
+  transition: 0.5s;
+  border: 1px solid transparent;
+}
+.contact__card:hover {
+  transform: translateY(-6px);
+  border-color: var(--secondary-color);
+}
+.contact__card-icon {
+  background-color: var(--secondary-color);
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  position: relative;
+}
+.contact__card-icon i {
+  color: var(--primary-color);
+  position: absolute;
+  font-size: 20px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.contact__card a {
+  color: var(--sr-txt-color);
+  font-size: 20px;
+}
+
 :root {
   --primary-color: #FFFCFC;
   --secondary-color: #24075c;
@@ -438,7 +516,7 @@ body {
   margin-bottom: 50px;
 }
 .title-section h2 {
-  font-size: 60px;
+  font-size: 40px;
   background: var(--sr-title-color);
   color: transparent;
   -webkit-background-clip: text;

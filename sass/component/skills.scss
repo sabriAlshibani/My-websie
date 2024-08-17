@@ -6,21 +6,23 @@
     display: flex;
     width: 300px;
     justify-content: space-between;
+    background-color: var(--sr-cards-color);
     padding: 8px;
     border-radius: 20px;
     margin: 0 auto 80px;
 
     &-item {
-      font-size: 18px;
+      font-size: 16px;
       padding: 6px;
       text-transform: capitalize;
       min-width: 20%;
       text-align: center;
+      color: var(--sr-txt-color);
+      font-weight: 600;
 
       &:hover,
       &--active {
-        background-color: var(--secondary-color);
-        color: var(--primary-color);
+        color: var(--sr-dr-color);
         border-radius: 16px;
       }
     }
@@ -42,14 +44,9 @@
 
     &:hover &-icon {
       filter: grayscale(0);
-      transform: scale(1.1, 1.1);
     }
     &:hover {
-      background-color: var(--secondary-color);
       border-color: var(--sr-dr-color);
-    }
-    &:hover &-name-sk {
-      color: var(--sr-dr-color);
     }
 
     &-icon {
