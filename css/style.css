@@ -9,6 +9,7 @@
 }
 .navbar__logo {
   font-size: 20px;
+  font-weight: 900;
   color: transparent;
   background: var(--logo-background);
   background-clip: text;
@@ -29,6 +30,7 @@
   background: var(--logo-background);
   background-clip: text;
   font-size: 18px;
+  font-weight: 800;
   text-transform: capitalize;
   position: relative;
 }
@@ -60,19 +62,20 @@
   color: var(--primary-color);
   font-size: var(--sr-foz);
 }
-.navbar .icon-menu {
+.navbar__icon-menu {
   font-size: var(--sr-foz);
   color: var(--sr-dr-color);
 }
 @media (min-width: 768px) {
-  .navbar .icon-menu {
+  .navbar__icon-menu {
     display: none;
   }
 }
-.navbar .icon-menu:hover .navbar__links {
+.navbar__icon-menu:hover .navbar__links {
   display: flex;
   position: absolute;
-  inset: 0;
+  top: 100%;
+  left: 0;
   width: 100%;
   height: 100%;
   background-color: black;
@@ -81,6 +84,7 @@
 
 .banner {
   padding: 30px 0;
+  margin-top: 20px;
 }
 .banner .container {
   display: flex;
@@ -105,9 +109,10 @@
   width: 40%;
   margin-left: auto;
   margin-right: auto;
-  transform: rotate(10deg);
-  transition: 1s;
   text-align: center;
+  /*     &:hover {
+        transform: rotate(0deg);
+      } */
 }
 @media (max-width: 990px) {
   .banner__img {
@@ -119,9 +124,6 @@
     width: 100%;
     order: -1;
   }
-}
-.banner__img:hover {
-  transform: rotate(0deg);
 }
 .banner__img:hover .banner__img img {
   border-color: var(--secondary-color);
@@ -139,6 +141,8 @@
 }
 .banner__content {
   width: 45%;
+  position: relative;
+  z-index: 999;
 }
 @media (max-width: 990px) {
   .banner__content {
@@ -153,18 +157,18 @@
 }
 .banner__content-hello {
   color: var(--sr-dr-color);
-  font-size: 38px;
-  font-weight: bold;
+  font-size: 20px;
+  font-weight: 400;
   text-transform: capitalize;
 }
 @media (max-width: 990px) {
   .banner__content-hello {
-    font-size: 22px;
+    font-size: 18px;
   }
 }
 @media (max-width: 767px) {
   .banner__content-hello {
-    font-size: 24px;
+    font-size: 16px;
   }
 }
 .banner__content-heading1 {
@@ -172,7 +176,7 @@
   text-transform: capitalize;
   background: var(--sr-title-color);
   -webkit-background-clip: text;
-  font-size: 70px;
+  font-size: 50px;
   line-height: 1.2;
   margin-bottom: 20px;
 }
@@ -188,7 +192,7 @@
 }
 .banner__content-description {
   color: var(--sr-text-color);
-  font-size: 20px;
+  font-size: 18px;
 }
 .banner__content-contact {
   display: flex;
@@ -236,7 +240,7 @@
   padding: 10px 20px;
   background-color: var(--primary-color);
   color: var(--secondary-color);
-  border-radius: 20px;
+  border-radius: 10px;
   border: 1px solid var(--secondary-color);
   font-size: 20px;
   transition: 0.5s;
@@ -246,8 +250,19 @@
   color: var(--primary-color);
 }
 
-.header {
-  width: 100%;
+header {
+  /*     background-image: url("/images/background.jpg");
+      background-size: cover;
+      position: relative;
+
+      &::before {
+          content: "";
+          position: absolute;
+          width: 100%;
+          height: 100%;
+          inset: 0;
+          background-color: rgba(0 0 0/ 90%);
+      } */
 }
 
 .skills {
@@ -314,6 +329,7 @@
 .about__content {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
   align-items: center;
 }
 @media (max-width: 767px) {
@@ -419,7 +435,6 @@
 @media (max-width: 767px) {
   .contact__img {
     width: 100%;
-    text-align: center;
   }
 }
 .contact__img .svg {
@@ -444,9 +459,10 @@
 .contact__card {
   display: flex;
   align-items: center;
+  flex-wrap: wrap;
   background-color: var(--sr-cards-color);
-  padding: 30px 20px;
-  gap: 30px;
+  padding: 20px 20px;
+  gap: 20px;
   border-radius: 20px;
   transition: 0.5s;
   border: 1px solid transparent;
@@ -479,13 +495,12 @@
   --primary-color: #FFFCFC;
   --secondary-color: #24075c;
   --sr-dr-color: #4E0DD3;
-  --logo-background: linear-gradient(to right, #4E0DD3, #270962);
+  --logo-background: linear-gradient(to right, #4E0DD3, hsl(260, 83%, 21%));
   --sr-foz: 26px;
   --sr-title-color: linear-gradient(to right, #4E0DD3, #563D88, #270962, #270962);
-  --sr-text-color: #180343;
-  --sr-title-color: linear-gradient(to right, #4E0DD3, #563D88, #270962, #270962);
+  --sr-text-color: #6c24fc;
   --sr-cards-color: #f0f0f0;
-  --sr-txt-color: rgb(77, 76, 76);
+  --sr-txt-color: rgb(0 0 0/70%);
 }
 
 * {

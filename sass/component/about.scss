@@ -4,6 +4,7 @@
     &__content {
         display: flex;
         justify-content: space-between;
+        flex-wrap: wrap;
         align-items: center;
         @media (max-width: 767px) {
             flex-direction: column;

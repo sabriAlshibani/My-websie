@@ -1,12 +1,12 @@
-/* icon.onclick = function () {
+ icon.onclick = function () {
     document.body.classList.toggle("dark-them")
     if (document.body.classList.contains("dark-them")) {
         icon.className = "bx bx-sun"
     } else {
         icon.className = "bx bx-moon"
     }
-} */
-/*     var links = document.getElementById("links");
+} 
+ var links = document.getElementById("links");
     var menu = document.getElementById("menu");
     menu.onclick = function () {
         links.classList.toggle("links-appear")
@@ -41,10 +41,10 @@
         } else {
             icon.className = "bx bx-moon"
         }
-    } */
- /*   var menu = document.getElementById("icon-menu");
+    } 
+   var menu = document.getElementById("icon-menu");
    var links = document.getElementById("links")
 
    menu.onclick = function() {
     links.classList.toggle("navbar__links-appear")
-   } */
+   } 

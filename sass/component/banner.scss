@@ -1,5 +1,6 @@
 .banner {
   padding: 30px 0;
+  margin-top: 20px;
   .container {
     display: flex;
     flex-wrap: wrap;
@@ -14,14 +15,15 @@
 
     }
   }
+
   &__img {
     position: relative;
     max-width: 438px;
     width: 40%;
     margin-left: auto;
     margin-right: auto;
-    transform: rotate(10deg);
-    transition: 1s;
+    // transform: rotate(10deg);
+    // transition: 1s;
     text-align: center;
     @media (max-width: 990px) {
       width: 48%;
@@ -31,9 +33,9 @@
       order: -1;
     }
 
-    &:hover {
+/*     &:hover {
       transform: rotate(0deg);
-    }
+    } */
     &:hover & img {
       border-color: var(--secondary-color);
     }
@@ -50,6 +52,8 @@
 
   &__content {
     width: 45%;
+    position: relative;
+    z-index: 999;
     @media (max-width: 990px) {
       width: 48%;
     }
@@ -59,14 +63,14 @@
     }
     &-hello {
       color: var(--sr-dr-color);
-      font-size: 38px;
-      font-weight: bold;
+      font-size: 20px;
+      font-weight: 400;
       text-transform: capitalize;
       @media (max-width: 990px) {
-        font-size: 22px;
+        font-size: 18px;
       }
       @media (max-width: 767px) {
-        font-size: 24px;
+        font-size: 16px;
       }
     }
 
@@ -75,7 +79,7 @@
       text-transform: capitalize;
       background: var(--sr-title-color);
       -webkit-background-clip: text;
-      font-size: 70px;
+      font-size: 50px;
       line-height: 1.2;
       margin-bottom: 20px;
 
@@ -88,7 +92,7 @@
     }
     &-description {
         color: var(--sr-text-color);
-        font-size: 20px;
+        font-size: 18px;
     }
 
     &-contact {
@@ -139,7 +143,7 @@
       padding: 10px 20px;
       background-color: var(--primary-color);
       color: var(--secondary-color);
-      border-radius: 20px;
+      border-radius: 10px;
       border: 1px solid var(--secondary-color);
       font-size: 20px;
       transition: .5s;
