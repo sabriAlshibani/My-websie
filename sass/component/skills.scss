@@ -35,7 +35,7 @@
     gap: 20px;
   }
   &__card {
-    background-color: var(--sr-cards-color);
+    background-color: var(--sr-crd-color);
     text-align: center;
     padding: 20px;
     border-radius: 16px;
@@ -46,7 +46,7 @@
       filter: grayscale(0);
     }
     &:hover {
-      border-color: var(--sr-dr-color);
+      border-color: var(--sr-bor-color);
     }
 
     &-icon {

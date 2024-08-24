@@ -13,4 +13,9 @@ header {
         inset: 0;
         background-color: rgba(0 0 0/ 90%);
     } */
+     height: 100vh;
+     min-height: 600px;
+     background: var(--sr-primary-color);
+     position: relative;
+     width: 100%;
 }

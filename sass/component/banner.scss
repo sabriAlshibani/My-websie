@@ -1,7 +1,8 @@
 .banner {
-  padding: 30px 0;
-  margin-top: 20px;
-  .container {
+   .container {
+
+  }
+/*   .container {
     display: flex;
     flex-wrap: wrap;
     column-gap: 6%;
@@ -14,55 +15,62 @@
       gap: 40px;
 
     }
-  }
-
+  } */
+/* 
   &__img {
     position: relative;
-    max-width: 438px;
-    width: 40%;
+    max-width: 388px;
+    width: 400px;
+    height: 400px;
     margin-left: auto;
     margin-right: auto;
+    border-radius: 50%;
+    background-color: var(--secondary-color);
     // transform: rotate(10deg);
     // transition: 1s;
     text-align: center;
     @media (max-width: 990px) {
-      width: 48%;
     }
+
     @media (max-width: 767px) {
-        width: 100%;
+      width: 250px;
+      height: 250px;
       order: -1;
     }
 
 /*     &:hover {
       transform: rotate(0deg);
     } */
-    &:hover & img {
+/*     &:hover & img {
       border-color: var(--secondary-color);
     }
     & img {
-      max-width: 100%;
-      height: auto;
-      border-radius: 20px;
+      max-width: 140%;
+      height: 100%;
+      border: 1px solid var(--primary-color);
       border: 1px solid transparent;
-      @media (max-width: 767px) {
-        max-width: 80%;
-      }
+      border-radius: 50%;
+      margin-bottom: -50px;
     }
-  }
+  } */ 
 
   &__content {
-    width: 45%;
-    position: relative;
-    z-index: 999;
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
     @media (max-width: 990px) {
-      width: 48%;
     }
     @media (max-width: 767px) {
         width: 100%;
+        margin-top: auto;
+        margin-bottom: auto;
         text-align: center;
     }
     &-hello {
-      color: var(--sr-dr-color);
+      color: var(--sr-text-color);
       font-size: 20px;
       font-weight: 400;
       text-transform: capitalize;
@@ -75,24 +83,23 @@
     }
 
     &-heading1 {
-      color: transparent;
+      color: var(--primary-color);
       text-transform: capitalize;
-      background: var(--sr-title-color);
-      -webkit-background-clip: text;
-      font-size: 50px;
+      font-size: 6rem;
+      font-weight: 400;
       line-height: 1.2;
-      margin-bottom: 20px;
 
       @media (max-width: 990px) {
-        font-size: 40px;
+        font-size: 4rem;
       }
       @media (max-width: 767px) {
-        font-size: 26px;
+        font-size: 3.2rem;
       }
     }
     &-description {
-        color: var(--sr-text-color);
+        color: var(--sr-txt-color);
         font-size: 18px;
+        margin: 20px 0;
     }
 
     &-contact {
@@ -118,14 +125,15 @@
       height: 40px;
       border-radius: 50%;
       position: relative;
-      border: 1px solid  var(--secondary-color);
+      border: 1px solid  var(--sr-secondary-color);
       transition: .5s;
+      cursor: pointer;
 
       &:hover {
-      background: var(--secondary-color);
+      background: var(--sr-secondary-color);
       }
       &:hover i {
-        color: var(--primary-color);
+        color: var(--sr-wi-color);
         }
 
       & i {
@@ -134,23 +142,30 @@
         left: 50%;
         transform: translate(-50%, -50%);
         color: var(--secondary-color);
-        font-size: var(--sr-foz);
+        font-size: 20px;
       }
     }
 
     &-btn-click {
-      border: none;
-      padding: 10px 20px;
-      background-color: var(--primary-color);
-      color: var(--secondary-color);
-      border-radius: 10px;
-      border: 1px solid var(--secondary-color);
-      font-size: 20px;
+      display: flex;
+      align-items: center;
+      padding: 10px 40px;
+      border-radius: 6px;
+      color: var(--sr-wi-color);
+      font-size: 24px;
       transition: .5s;
+      background-color: var(--sr-secondary-color);
+      border: 1px solid transparent;
+      cursor: pointer;
 
       &:hover {
+        border-color: var(--sr-c1-color);
         background-color: var(--secondary-color);
-        color: var(--primary-color);
+      color: var(--sr-secondary-color);
+      }
+
+      &:hover i {
+        transform: rotate(-20deg);
       }
     }
   }
