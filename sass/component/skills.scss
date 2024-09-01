@@ -2,32 +2,36 @@
   padding-top: 40px;
   padding-bottom: 40px;
 
-  &__tap {
+/*   &__tap {
     display: flex;
     width: 300px;
     justify-content: space-between;
-    background-color: var(--sr-cards-color);
-    padding: 8px;
+    align-items: center;
+    background-color: var(--sr-secondary-color);
+    padding: 8px 20px;
     border-radius: 20px;
     margin: 0 auto 80px;
 
     &-item {
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
       font-size: 16px;
-      padding: 6px;
       text-transform: capitalize;
-      min-width: 20%;
       text-align: center;
-      color: var(--sr-txt-color);
+      margin: auto;
+      color: var(--sr-wi-color);
       font-weight: 600;
+      background-color: var(--sr-secondary-color);
 
       &:hover,
       &--active {
-        color: var(--sr-dr-color);
-        border-radius: 16px;
+        transform: translateY(-20px);
+    border: 3px solid #f3efef ;
       }
     }
 
-  }
+  } */
 
   &__box {
     display: grid;

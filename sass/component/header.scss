@@ -1,6 +1,25 @@
 @import 'navbar.scss';
 @import 'banner.scss';
-header {
+.header {
+    &__icon-mood {
+        width: 40px;
+        height: 60px;
+        position: fixed;
+        right: 0;
+        top: 50%;
+        transform: translateY(-50%);
+        background-color: var(--sr-secondary-color);
+        border-radius: 8px;
+    
+        & i {
+          color: var(--sr-wi-color);
+          font-size: 20px;
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+        }
+      }
 /*     background-image: url("/images/background.jpg");
     background-size: cover;
     position: relative;

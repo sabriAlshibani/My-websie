@@ -9,11 +9,11 @@
 
 body {
     font-family: "cairo", sans-serif;
-    background-color: #ffff;
+    background-color: var(--sr-bcr-color);
 }
 .container {
     width: 1200px;
-    max-width: 80%;
+    max-width: 90%;
     padding-left: 20px;
     padding-right: 20px;
     margin-left: auto;
@@ -26,7 +26,7 @@ body {
    & h2 {
     text-align: center;
     font-size: 40px;
-    color: var(--primary-color);
+    color: var(--sr-secondary-color);
     text-transform: capitalize;
     }
 
@@ -36,3 +36,35 @@ body {
         margin-top: -10px;
     }
 }
+@media (max-width: 767px) {
+    .navbar__links {
+      display: none;
+    }
+    .links-appear {
+      display: flex;
+      flex-direction: column;
+      gap: 0;
+      align-items: center;
+      position: absolute;
+      width: 100%;
+      left: 0;
+      top: 100%;
+      background-color: var(--secondary-color);
+    }
+    .links-appear li {
+      width: 100%;
+      border-bottom: 1px solid var(--border-color);
+    }
+    .links-appear li:last-child {
+      border-bottom: none;
+    }
+    .links-appear a {
+      color: var(--text-color);
+      padding: 10px;
+      text-align: center;
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+  }

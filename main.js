@@ -7,7 +7,7 @@
     }
 } 
  var links = document.getElementById("links");
-    var menu = document.getElementById("menu");
+    var menu = document.getElementById("icon-menu");
     menu.onclick = function () {
         links.classList.toggle("links-appear")
         if (links.classList.contains("links-appear")) {
@@ -31,15 +31,24 @@
         }
     }
     function change() {
-        var icon = document.getElementById("icon");
+        var icon = document.getElementById("icon-mood");
+        var contact = document.getElementById("contact-img");
         document.body.classList.toggle('dark-them');
         document.body.classList.toggle('light-them');
         let style = document.body.classList.contains('light-them') ? 'light-them' : 'dark-them';
         localStorage.setItem('color-mode', style);
+
+
         if (document.body.classList.contains("dark-them")) {
             icon.className = "bx bx-sun"
         } else {
             icon.className = "bx bx-moon"
+        }
+
+        if (document.body.classList.contains("dark-them")) {
+            contact.src = "images/background4.jpg"
+        } else {
+            contact.src = "images/background2.jpg"
         }
     } 
    var menu = document.getElementById("icon-menu");

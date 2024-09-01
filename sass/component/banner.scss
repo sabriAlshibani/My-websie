@@ -2,6 +2,7 @@
    .container {
 
   }
+
 /*   .container {
     display: flex;
     flex-wrap: wrap;
@@ -70,7 +71,7 @@
         text-align: center;
     }
     &-hello {
-      color: var(--sr-text-color);
+      color: var(--sr-txt-color);
       font-size: 20px;
       font-weight: 400;
       text-transform: capitalize;
@@ -83,7 +84,7 @@
     }
 
     &-heading1 {
-      color: var(--primary-color);
+      color: var(--sr-secondary-color);
       text-transform: capitalize;
       font-size: 6rem;
       font-weight: 400;
@@ -125,7 +126,7 @@
       height: 40px;
       border-radius: 50%;
       position: relative;
-      border: 1px solid  var(--sr-secondary-color);
+      border: 1px solid  var(--sr-bor-color);
       transition: .5s;
       cursor: pointer;
 
@@ -141,7 +142,7 @@
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
-        color: var(--secondary-color);
+        color: var(--sr-secondary-color);
         font-size: 20px;
       }
     }
