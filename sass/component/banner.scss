@@ -119,6 +119,7 @@
       display: flex;
       justify-content: space-between;
       gap: 10px;
+      margin-bottom: 20px;
     }
 
     &-icon {
@@ -152,12 +153,16 @@
       align-items: center;
       padding: 10px 40px;
       border-radius: 6px;
-      color: var(--sr-wi-color);
       font-size: 24px;
       transition: .5s;
       background-color: var(--sr-secondary-color);
       border: 1px solid transparent;
       cursor: pointer;
+      color: var(--sr-wi-color);
+
+      & a {
+      color: var(--sr-wi-color);
+      }
 
       &:hover {
         border-color: var(--sr-c1-color);
@@ -168,6 +173,10 @@
       &:hover i {
         transform: rotate(-20deg);
       }
+      &:hover a {
+      color: var(--sr-secondary-color);
+      }
+      
     }
   }
 }

@@ -227,6 +227,7 @@
   display: flex;
   justify-content: space-between;
   gap: 10px;
+  margin-bottom: 20px;
 }
 .banner__content-icon {
   width: 40px;
@@ -256,12 +257,15 @@
   align-items: center;
   padding: 10px 40px;
   border-radius: 6px;
-  color: var(--sr-wi-color);
   font-size: 24px;
   transition: 0.5s;
   background-color: var(--sr-secondary-color);
   border: 1px solid transparent;
   cursor: pointer;
+  color: var(--sr-wi-color);
+}
+.banner__content-btn-click a {
+  color: var(--sr-wi-color);
 }
 .banner__content-btn-click:hover {
   border-color: var(--sr-c1-color);
@@ -270,6 +274,9 @@
 }
 .banner__content-btn-click:hover i {
   transform: rotate(-20deg);
+}
+.banner__content-btn-click:hover a {
+  color: var(--sr-secondary-color);
 }
 
 .header {
