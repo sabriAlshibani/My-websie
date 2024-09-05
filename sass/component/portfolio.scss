@@ -1,0 +1,23 @@
+.portfolio {
+  & .repos {
+    & .repo {
+      margin-bottom: 20px;
+    }
+    
+    & h2 {
+      color: #333;
+    }
+    
+    & a {
+      color: #0366d6;
+      text-decoration: none;
+    }
+    
+    & a:hover {
+      text-decoration: underline;
+    }
+  }
+
+}
+
+

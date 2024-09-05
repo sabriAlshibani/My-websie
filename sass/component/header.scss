@@ -1,6 +1,7 @@
 @import 'navbar.scss';
 @import 'banner.scss';
 .header {
+
     &__icon-mood {
         width: 40px;
         height: 60px;
@@ -32,8 +33,7 @@
         inset: 0;
         background-color: rgba(0 0 0/ 90%);
     } */
-     height: 100vh;
-     min-height: 600px;
+     min-height: 100vh;
      background: var(--sr-primary-color);
      position: relative;
      width: 100%;

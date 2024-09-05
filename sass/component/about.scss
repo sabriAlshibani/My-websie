@@ -9,11 +9,14 @@
     & p {
       font-size: 18px;
       line-height: 2;
-      color: var(--sr-txt-color);
+      color: var(--sr-txt-color)
     }
 
     & span  {
       font-weight: 800;
+    }
+    & a {
+      font-weight: 600;
     }
     @media (max-width: 767px) {
       flex-direction: column;

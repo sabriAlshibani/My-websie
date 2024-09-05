@@ -46,7 +46,7 @@
         }
 
         if (document.body.classList.contains("dark-them")) {
-            contact.src = "images/background4.jpg"
+            contact.src = "images/background5.jpg"
         } else {
             contact.src = "images/background2.jpg"
         }
@@ -55,5 +55,34 @@
    var links = document.getElementById("links")
 
    menu.onclick = function() {
-    links.classList.toggle("navbar__links-appear")
+    links.clas
+    
+    sList.toggle("navbar__links-appear")
    } 
+
+   /* API github */
+
+   const username = 'sabriAlshibani'; // Replace with your GitHub username
+const repositories = ['Cafe', 'Elzero-cours-summary', 'kaspar-template']; // Replace with your repositories
+
+const container = document.getElementById('repos-container');
+
+repositories.forEach(repo => {
+  const repoUrl = `https://api.github.com/repos/${username}/${repo}`;
+
+  fetch(repoUrl)
+    .then(response => response.json())
+    .then(data => {
+      const repoDiv = document.createElement('div');
+      repoDiv.classList.add('repo');
+      repoDiv.innerHTML = `
+        <h2>${data.name}</h2>
+        <p>${data.description}</p>
+        <p><strong>Stars:</strong> ${data.stargazers_count}</p>
+        <p><strong>Forks:</strong> ${data.forks_count}</p>
+        <a href="${data.html_url}" target="_blank">View Repository</a>
+      `;
+      container.appendChild(repoDiv);
+    })
+    .catch(error => console.error('Error fetching repo data:', error));
+});
