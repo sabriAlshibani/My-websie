@@ -62,7 +62,7 @@
 
    /* API github */
 
-   const username = 'sabriAlshibani'; // Replace with your GitHub username
+/*    const username = 'sabriAlshibani'; // Replace with your GitHub username
 const repositories = ['Cafe', 'Elzero-cours-summary', 'kaspar-template']; // Replace with your repositories
 
 const container = document.getElementById('repos-container');
@@ -85,4 +85,4 @@ repositories.forEach(repo => {
       container.appendChild(repoDiv);
     })
     .catch(error => console.error('Error fetching repo data:', error));
-});
+}); */
