@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="ar">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>موقعي الإلكتروني</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <!-- box icon link -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css"
+    />
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body onload="loading()">
+    <!-- start header -->
+    <header class="header">
+      <div class="header__icon-mood" onclick="change()">
+        <i class="bx bx-moon" id="icon-mood"></i>
+      </div>
+      <!-- start navbar -->
+      <nav class="navbar">
+        <div class="container">
+          <a href="#" class="navbar__logo">صبري الشيباني</a>
+          <ul class="navbar__links" id="links">
+            <li class="navbar__links-item"><a href="#">الرئيسية</a></li>
+            <li class="navbar__links-item"><a href="#">عنّي</a></li>
+            <li class="navbar__links-item"><a href="#">المهارات</a></li>
+            <li class="navbar__links-item"><a href="#">اتصل بي</a></li>
+          </ul>
+          <div class="navbar__icon-menu">
+            <i class="bx bx-menu" id="icon-menu"></i>
+          </div>
+        </div>
+      </nav>
+      <!-- end navbar -->
+      <!-- start banner -->
+      <div class="banner">
+        <div class="container">
+          <div class="banner__content">
+            <span class="banner__content-hello">مرحباً، أنا</span>
+            <h1 class="banner__content-heading1">صبري محمد الشيباني</h1>
+            <p class="banner__content-description">
+              مدفوع بالفضول وشغف التكنولوجيا، أنا في رحلة لتعلم فن تطوير الويب. مع أساس في HTML وCSS وJavaScript، أستمر في استكشاف طرق جديدة لتحويل الأفكار الإبداعية إلى واقع على الويب. انضم إليّ بينما أواصل التعلم والنمو والابتكار في العالم الرقمي.
+            </p>
+            <div class="banner__content-contact">
+              <button class="banner__content-btn-click">
+                <a
+                  href="https://www.linkedin.com/in/sabri-m-alshibani-46318a287?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+                target="_blank">لينكد إن</a>
+                <i class="bx bx-right-arrow-alt"></i>
+              </button>
+              <div class="banner__content-icons">
+                <div class="banner__content-icon">
+                  <a href="https://www.facebook.com/profile.php?id=100057279386624" target="_blank"><i class="bx bxl-facebook"></i></a>
+                </div>
+                <div class="banner__content-icon">
+                  <a href="https://www.instagram.com/usa5s?igsh=bjY2dHM2ZWt5NHB3" target="_blank"><i class="bx bxl-instagram"></i></a>
+                </div>
+                <div class="banner__content-icon">
+                  <a href="https://github.com/sabriAlshibani" target="_blank"><i class="bx bxl-github"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- end banner -->
+    </header>
+    <!-- end header -->
+
+    <!-- start about -->
+    <section class="about">
+      <div class="container">
+        <div class="title-section">
+          <h2>عنّي</h2>
+        </div>
+        <div class="about__content">
+          <p>
+            مرحباً، أنا <span>صبري محمد الشيباني</span>، طالب في سن الثامنة عشرة في <a href="#">جامعة تعز</a>، شغوف بتطوير الويب. مع أساس في HTML وCSS وJavaScript، أركز على تعلم مهارات جديدة وإنشاء مواقع تفاعلية. أنا متحمس لهذه الرحلة في التكنولوجيا وأهدف إلى تحقيق تأثير كبير في العالم الرقمي كمطور ويب بارع.
+          </p>
+          <button class="about__btn-cv">
+            تحميل السيرة الذاتية <i class="bx bxs-download"></i>
+          </button>
+        </div>
+      </div>
+    </section>
+    <!-- end about -->
+
+    <!-- start skills -->
+    <section class="skills">
+      <div class="container">
+        <div class="title-section">
+          <h2>مهاراتي</h2>
+        </div>
+        <div class="skills__box">
+          <div class="skills__card">
+            <object data="images/html.svg" class="skills__card-icon"></object>
+            <h3 class="skills__card-name-sk">HTML</h3>
+          </div>
+          <div class="skills__card">
+            <object
+              data="images/javascript.svg"
+              class="skills__card-icon"
+            ></object>
+            <h3 class="skills__card-name-sk">JavaScript</h3>
+          </div>
+          <div class="skills__card">
+            <object data="images/css.svg" class="skills__card-icon"></object>
+            <h3 class="skills__card-name-sk">CSS</h3>
+          </div>
+          <div class="skills__card">
+            <object data="images/git.svg" class="skills__card-icon"></object>
+            <h3 class="skills__card-name-sk">Git</h3>
+          </div>
+          <div class="skills__card">
+            <object data="images/figma.svg" class="skills__card-icon"></object>
+            <h3 class="skills__card-name-sk">Figma</h3>
+          </div>
+          <div class="skills__card">
+            <object data="images/sass.svg" class="skills__card-icon"></object>
+            <h3 class="skills__card-name-sk">Sass</h3>
+          </div>
+          <div class="skills__card">
+            <object
+              data="images/adobe-illustrator.svg"
+              class="skills__card-icon"
+            ></object>
+            <h3 class="skills__card-name-sk">Illustrator</h3>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- end skills -->
+
+    <!-- start contact -->
+    <section class="contact">
+      <div class="container">
+        <div class="title-section">
+          <h2>لنواصل التواصل</h2>
+        </div>
+        <div class="contact__content">
+          <div class="contact__img">
+            <img
+              src="images/background2.jpg"
+              class="bac-img"
+              id="contact-img"
+            />
+          </div>
+          <div class="contact__application">
+            <div class="contact__card">
+              <div class="contact__card-icon">
+                <i class="bx bx-envelope"></i>
+              </div>
+              <a href="mailto:sbryalshybany1@gmail.com" target="_blank"
+                >sabri.alshibani@gmail.com</a
+              >
+            </div>
+            <div class="contact__card">
+              <div class="contact__card-icon">
+                <i class="bx bxl-whatsapp"></i>
+              </div>
+              <a href="https://wa.me/+967774130655" target="_blank"
+                >+967774130655</a
+              >
+            </div>
+            <div class="contact__card">
+              <div class="contact__card-icon">
+                <i class="bx bxl-facebook"></i>
+              </div>
+              <a href="https://www.facebook.com/profile.php?id=100057279386624" target="_blank">صبري م. الشيباني</a>
+            </div>
+            <div class="contact__card">
+              <div class="contact__card-icon">
+                <i class="bx bxl-instagram"></i>
+              </div>
+              <a href="https://www.instagram.com/usa5s?igsh=bjY2dHM2ZWt5NHB3" target="_blank">@usa5</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- end
